@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<fonts>
+  
+  <font>
+    <name>standard</name>
+    <filename>Assets/text.png</filename>
+    <firstASHIIvalue>32</firstASHIIvalue>
+    <cols>15</cols>
+    <rows>8</rows>
+    <scale>1</scale>
+  </font>
+
+  <font>
+    <name>comics</name>
+    <filename>Assets/comics.png</filename>
+    <firstASHIIvalue>32</firstASHIIvalue>
+    <cols>10</cols>
+    <rows>10</rows>
+    <scale>1</scale>
+  </font>
+
+  <font>
+    <name>simple</name>
+    <filename>Assets/simpleFont.png</filename>
+    <firstASHIIvalue>0</firstASHIIvalue>
+    <cols>13</cols>
+    <rows>6</rows>
+    <scale>1</scale>
+  </font>
+  
+</fonts>

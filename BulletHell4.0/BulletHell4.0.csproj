@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9FC24CD-EF0C-4793-82CF-CCCFD1C19F20}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BulletHell4._0</RootNamespace>
+    <AssemblyName>BulletHell4.0</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="aiv-audio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aiv.Audio.0.1.0\lib\net40\aiv-audio.dll</HintPath>
+    </Reference>
+    <Reference Include="aiv-fast2d, Version=1.0.6757.31863, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aiv.Fast2D.0.14.0\lib\net40\aiv-fast2d.dll</HintPath>
+    </Reference>
+    <Reference Include="aiv-fast2d-utils-texturehelper, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TextureHelper.1.2.0\lib\aiv-fast2d-utils-texturehelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Concentus, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Concentus.1.1.3\lib\portable-net45+win+wpa81+wp80\Concentus.dll</HintPath>
+    </Reference>
+    <Reference Include="Concentus.Oggfile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Concentus.OggFile.1.0.0\lib\portable-net45+win+wpa81+wp80\Concentus.Oggfile.dll</HintPath>
+    </Reference>
+    <Reference Include="NVorbis, Version=0.8.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NVorbis.0.8.5.0\lib\NVorbis.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=2.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.2.0.0\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\Animation.cs" />
+    <Compile Include="Engine\FSM\State.cs" />
+    <Compile Include="Engine\FSM\StateMachine.cs" />
+    <Compile Include="Engine\GameObject.cs" />
+    <Compile Include="Engine\Interfaces\IActivable.cs" />
+    <Compile Include="Engine\Interfaces\IDrawable.cs" />
+    <Compile Include="Engine\Interfaces\iPositionable.cs" />
+    <Compile Include="Engine\Interfaces\IUpdatable.cs" />
+    <Compile Include="Engine\Mgrs\AudioMgr.cs" />
+    <Compile Include="Engine\Mgrs\CameraMgr.cs" />
+    <Compile Include="Engine\Mgrs\DrawMgr.cs" />
+    <Compile Include="Engine\Mgrs\GfxMgr.cs" />
+    <Compile Include="Engine\Mgrs\InputMgr.cs" />
+    <Compile Include="Engine\Mgrs\PhysicsMgr.cs" />
+    <Compile Include="Engine\Mgrs\UpdateMgr.cs" />
+    <Compile Include="Engine\Physics\Circle.cs" />
+    <Compile Include="Engine\Physics\Collider.cs" />
+    <Compile Include="Engine\Physics\Collision.cs" />
+    <Compile Include="Engine\Physics\Physics.cs" />
+    <Compile Include="Engine\Physics\Ray.cs" />
+    <Compile Include="Engine\Physics\Rect.cs" />
+    <Compile Include="Engine\Physics\RigidBody.cs" />
+    <Compile Include="Engine\RNG.cs" />
+    <Compile Include="Engine\Timer.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Objects\Actors\EnemySystem\Enemy.cs" />
+    <Compile Include="Objects\Actors\EnemySystem\EnemyBoss.cs" />
+    <Compile Include="Objects\Actors\Ship.cs" />
+    <Compile Include="Objects\Actors\Player.cs" />
+    <Compile Include="Objects\Background.cs" />
+    <Compile Include="Objects\BulletSystem\Bullet.cs" />
+    <Compile Include="Objects\BulletSystem\BulletMgr.cs" />
+    <Compile Include="Objects\BulletSystem\EnemyBullet.cs" />
+    <Compile Include="Objects\BulletSystem\PlayerBullet.cs" />
+    <Compile Include="Objects\DebugCircle.cs" />
+    <Compile Include="Objects\Actors\EnemySystem\EnemyMgr.cs" />
+    <Compile Include="Objects\EnemyAlert.cs" />
+    <Compile Include="Objects\Explosion.cs" />
+    <Compile Include="Objects\GUI\Button.cs" />
+    <Compile Include="Objects\GUI\GameOverWidget.cs" />
+    <Compile Include="Objects\GUI\HUDCorner.cs" />
+    <Compile Include="Objects\GUI\LifeBar.cs" />
+    <Compile Include="Objects\GUI\Text\Font.cs" />
+    <Compile Include="Objects\GUI\Text\TextChar.cs" />
+    <Compile Include="Objects\GUI\Text\TextObject.cs" />
+    <Compile Include="Objects\ScorePointsSystem.cs" />
+    <Compile Include="Objects\VisualEffect.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\GameOverScene.cs" />
+    <Compile Include="Scenes\MenuScene.cs" />
+    <Compile Include="Scenes\LogoScene.cs" />
+    <Compile Include="Scenes\PlayScene.cs" />
+    <Compile Include="Scenes\Scene.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\aivLogo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\crash_0.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\explosion3.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\FrozenJam_Loop.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\laser4.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\bullet_enemy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\bullet_player.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\EnemyIncomingDx.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\EnemyIncomingSx.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\menu.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\Where%27s my Spaceship.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\buttonPlay.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\buttonQuit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\buttonRetry.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\comics.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\debugCircle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\enemy_ship_0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\explosion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\GameOverText.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\HUDCorner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\LifeBarHUD2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\LifeHUD2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\PlayerLifeHUD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\power_up_0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\ship_spritesheet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\simpleFont.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\spaceboss_spritesheet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\space_BG_6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\text.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\XML\FontsConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\XML\ScreenSettings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\XML\SpritesheetConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="openal32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Textures\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

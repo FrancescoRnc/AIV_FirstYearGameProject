@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Window>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Title>Game</Title>
+  <FullScreen>false</FullScreen>
+  <OrthograficSize>0</OrthograficSize>
+</Window>

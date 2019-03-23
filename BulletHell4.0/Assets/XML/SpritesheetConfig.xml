@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<spritesheets>
+
+  <spritesheet>
+    <name>logo</name>
+    <filename>Assets/aivLogo.jpg</filename>
+    <frame/>
+    <animations/>
+  </spritesheet>
+
+  <spritesheet>
+    <name>menu_Background</name>
+    <filename>Assets/menu.jpg</filename>
+    <frame/>
+    <animations/>
+  </spritesheet>
+  
+  <spritesheet>
+    <name>background</name>
+    <filename>Assets/space_BG_6.png</filename>
+    <frame/>
+    <animations/>
+  </spritesheet>
+
+  
+
+  <spritesheet>
+    <name>player</name>
+    <filename>Assets/ship_spritesheet.png</filename>
+    <frame>
+      <width>93</width>
+      <height>78</height>
+    </frame>
+    <animations>
+      <animation>
+        <name>idle</name>
+        <loop>true</loop>
+        <fps>48</fps>
+        <cols>1</cols>
+        <rows>5</rows>
+        <startX>0</startX>
+        <startY>0</startY>
+      </animation>
+    </animations>
+  </spritesheet>
+  
+  <spritesheet>
+    <name>boss</name>
+    <filename>Assets/spaceboss_spritesheet.png</filename>
+    <frame>
+      <width>159</width>
+      <height>222</height>
+    </frame>
+    <animations>
+      <animation>
+        <name>idle</name>
+        <loop>true</loop>
+        <fps>24</fps>
+        <cols>1</cols>
+        <rows>2</rows>
+        <startX>0</startX>
+        <startY>0</startY>
+      </animation>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>enemy_1</name>
+    <filename>Assets/enemy_ship_0.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>bullet_player</name>
+    <filename>Assets/bullet_player.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>bullet_enemy</name>
+    <filename>Assets/bullet_enemy.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet> 
+
+  <spritesheet>
+    <name>player_life_HUD</name>
+    <filename>Assets/PlayerLifeHUD.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>lifebar_bg_enemy</name>
+    <filename>Assets/LifeBarHUD2.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>lifebar_point_enemy</name>
+    <filename>Assets/LifeHUD2.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>power_up_life</name>
+    <filename>Assets/power_up_0.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>alertDx</name>
+    <filename>Assets/EnemyIncomingDx.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>alertSx</name>
+    <filename>Assets/EnemyIncomingSx.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>HUD_corner</name>
+    <filename>Assets/HUDCorner.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>gameover</name>
+    <filename>Assets/GameOverText.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>play_button</name>
+    <filename>Assets/buttonPlay.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>quit_button</name>
+    <filename>Assets/buttonQuit.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>retry_button</name>
+    <filename>Assets/buttonRetry.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>explosion_0</name>
+    <filename>Assets/explosion.png</filename>
+    <frame>
+      <width>128</width>
+      <height>128</height>
+    </frame>
+    <animations>
+      <animation>
+        <name>normal</name>
+        <loop>false</loop>
+        <fps>36</fps>
+        <cols>8</cols>
+        <rows>6</rows>
+        <startX>0</startX>
+        <startY>0</startY>
+      </animation>
+    </animations>
+  </spritesheet>
+
+  <spritesheet>
+    <name>debug_circle</name>
+    <filename>Assets/debugCircle.png</filename>
+    <frame/>
+    <animations>
+    </animations>
+  </spritesheet>
+
+</spritesheets>
